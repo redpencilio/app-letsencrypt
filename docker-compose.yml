@@ -32,6 +32,7 @@ services:
       - ./config/html:/usr/share/nginx/html
       - ./config/dhparam:/etc/nginx/dhparam
       - ./config/certificates:/etc/nginx/certs
+      - ./data/acme.sh:/etc/acme.sh
       - /var/run/docker.sock:/var/run/docker.sock:ro
     logging: *default-logging
     restart: always
