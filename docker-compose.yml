@@ -17,7 +17,7 @@ services:
       - ./config/conf.d:/etc/nginx/conf.d
       - ./config/vhost.d:/etc/nginx/vhost.d
       - ./config/html:/usr/share/nginx/html
-      - ./config/htpasswd:/usr/share/nginx/htpasswd
+      - ./config/htpasswd:/etc/nginx/htpasswd
       - ./config/dhparam:/etc/nginx/dhparam
       - ./config/certificates:/etc/nginx/certs:ro
       - /var/run/docker.sock:/tmp/docker.sock:ro
